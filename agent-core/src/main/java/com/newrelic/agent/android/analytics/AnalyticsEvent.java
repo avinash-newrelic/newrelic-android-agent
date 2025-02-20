@@ -94,7 +94,7 @@ public class AnalyticsEvent extends HarvestableObject {
             this.attributeSet.add(new AnalyticsAttribute(AnalyticsAttribute.EVENT_NAME_ATTRIBUTE, this.name));
         }
 
-        this.attributeSet.add(new AnalyticsAttribute(AnalyticsAttribute.EVENT_TIMESTAMP_ATTRIBUTE, String.valueOf(this.timestamp)));
+        this.attributeSet.add(new AnalyticsAttribute(AnalyticsAttribute.EVENT_TIMESTAMP_ATTRIBUTE, this.timestamp));
         this.attributeSet.add(new AnalyticsAttribute(AnalyticsAttribute.EVENT_CATEGORY_ATTRIBUTE, this.category.name()));
         this.attributeSet.add(new AnalyticsAttribute(AnalyticsAttribute.EVENT_TYPE_ATTRIBUTE, this.eventType));
 
